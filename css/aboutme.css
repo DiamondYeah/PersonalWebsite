@@ -1,0 +1,209 @@
+/* Main About Me CSS */
+
+.main_body{
+
+    overflow: hidden;
+    
+}
+
+.main_content_name_occupation_container{
+
+    min-width: 6vw;
+
+    padding-bottom: 2vh;
+
+
+}
+.personal_pic_container{
+
+    display: flex;
+
+    height: 35vh;
+
+    margin-left: 4vw;
+
+    
+
+}
+
+.personal_pic{
+
+    transform: scale(0.9, 0.9);
+    clip-path: circle(50%);
+
+}
+
+.border{
+
+    height: 1px;
+    width: 100%;
+    
+    border: 1px solid;
+
+    border-color: #181B1E;
+
+    transition: border-color 0.5s;
+
+}
+
+
+/* About Me Fonts CSS */
+
+.introduction{
+
+    font-size: 25px;
+    font-weight: 600;
+
+    margin: 0px;
+
+    color: #F5F5F5;
+
+    transition: color 0.5s;
+
+}
+
+.about_header{
+
+    font-size: 30px;
+    font-weight: 800;
+    
+    color: salmon;
+
+}
+
+.bio_container{
+
+    padding-left: 3vw;
+
+}
+
+.description{
+
+
+    font-size: 20px;
+    font-weight: 300;
+
+    width: 90%;
+
+    color: #F5F5F5;
+
+    transition: color 0.5s;
+
+
+}
+
+.list{
+
+    font-size: 20px;
+    font-weight: 500;
+
+    width: 90%;
+
+    margin-left: -1vw;
+
+
+
+
+}
+
+.list li{
+
+    color: #F5F5F5;
+
+    transition: color 0.5s;
+
+}
+
+/* Light Mode */
+
+.font_toggle_white_light_mode, .font_toggle_white_light_mode li, blockquote .font_toggle_white_light_mode{
+
+    color: #181B1E;
+    border-color: #181B1E;
+
+}
+
+blockquote.font_toggle_white_light_mode{
+
+    border-color: #181B1E;
+
+}
+
+hr.font_toggle_white_light_mode{
+
+    border-color: #F5F5F5;
+
+}
+
+.font_toggle_lightblue_light_mode{
+
+    color: #77B1D4;
+
+}
+
+/* Blockquote */
+
+.block_education{
+
+    border-left: 8px solid; 
+    border-color: #F5F5F5;
+
+    margin-left: 0vw;
+
+    padding-left: 1vw;
+
+}
+
+.education{
+
+    font-size: 20px;
+    font-weight: 800;
+    color: #F5F5F5;
+
+    transition: color 0.5s;
+
+}
+
+.school{
+
+    margin: 0px;
+
+    font-size: 15px;
+    font-weight: 400;
+    color: grey;
+
+}
+
+/* Mobile Format */
+
+@media (max-width: 800px) {
+
+    .main_content_container {
+
+        flex-direction: column;
+    }
+
+
+    .personal_pic_container {
+
+        justify-content: center;
+
+        height: 30vh;
+
+        margin-left: 0px;
+    }
+
+    .bio_container {
+
+        padding-left: 8vw;
+
+    }
+
+
+    .about_header, .description{
+
+        text-align: center;
+
+    }
+
+}

@@ -1,0 +1,156 @@
+/* Main Skills CSS */
+
+.main_body{
+
+    overflow: hidden;
+    
+}
+
+.collection_list{
+
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px; 
+    column-gap: 10px;
+
+    width: 50%;
+    height: auto;
+
+
+}
+
+.border{
+
+    width: 100%;
+    
+    border: 1px solid;
+
+    border-color: #181B1E;
+}
+
+
+/* Skills Fonts CSS */
+
+.collection_element{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0px;
+
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+
+    height: 4vh;
+
+    font-size: 18px;
+    color: #F5F5F5;
+    font-weight: 300;
+
+    background-color: #181B1E;
+
+    box-shadow: 0px 2px 1px grey;
+
+    border: 1px solid;
+    border-color: white;
+    border-radius: 10px;
+
+    box-shadow: 0px 0px 0px white;
+    transform: scale(1, 1);
+
+    transition: box-shadow 0.5s, transform 0.5s, border-color 0.5s;
+
+}
+
+.collection_element:hover{
+
+    box-shadow: 0px 0px 5px white;
+    transform: scale(1.05, 1.05);
+
+}
+
+
+
+.about_header{
+
+    font-size: 30px;
+    font-weight: 800;
+    
+    color: salmon;
+
+}
+
+.skills_container{
+    padding-left: 3vw;
+
+}
+
+.description{
+
+
+    font-size: 20px;
+    font-weight: 300;
+
+    width: 90%;
+
+    color: #F5F5F5;
+
+    transition: color 0.5s;
+
+
+}
+
+.list{
+
+    font-size: 20px;
+    font-weight: 500;
+
+    width: 90%;
+
+    margin-left: -1vw;
+
+
+
+
+}
+
+.list li{
+
+    color: #F5F5F5;
+
+    transition: color 0.5s;
+
+}
+
+/* Light Mode */
+
+.font_toggle_white_light_mode, .font_toggle_white_light_mode li, blockquote .font_toggle_white_light_mode{
+
+    color: #181B1E;
+
+}
+
+.font_toggle_lightblue_light_mode{
+
+    color: #77B1D4;
+
+}
+
+.collection_element.font_toggle_lightblue_light_mode {
+
+    color: #F5F5F5;
+
+}
+
+.collection_element:hover.font_toggle_lightblue_light_mode {
+
+    box-shadow: 0px 0px 5px #77B1D4;
+
+}
+
+.collection_element.font_toggle_lightblue_light_mode {
+
+    border-color: #77B1D4;
+
+}

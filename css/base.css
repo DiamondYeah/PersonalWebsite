@@ -1,0 +1,622 @@
+/* Allows the file to calcualte both margin and padding when adjusting height and width of element, to avoid manual adjusting*/
+* {
+    box-sizing: border-box;
+}
+
+
+/* General CSS */
+body{
+
+    background-color: #181B1E;
+    margin: 0px;
+
+    overflow: hidden;
+
+    transition: background-color 0.5s;
+
+}
+
+/* Content CSS */
+
+.toggle_dark_mode{
+
+    display: inline-block;
+    position: absolute;
+
+    width: 5vw;
+    
+    top: 35px;
+    left: 30px;
+
+}
+
+.main_body_container{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+
+    margin: 0px;
+
+}
+
+.main_body{
+
+    display: flex;
+    flex-direction: column;
+    
+    margin-top: -50px;
+    
+    width: 65vw;
+    height: 70vh;
+
+    border: 2px solid;
+    border-color: white;
+
+    border-radius: 10px;
+
+    background-color: #0e1a2b;
+
+    overflow: hidden;
+
+    transition: background-color 0.5s, border-color 0.5s;
+
+}
+
+.main_title_container{
+
+    display: flex;
+    align-items: center;
+
+    padding-left: 2vw;
+
+    min-height: 7vh;
+
+    max-height: 7vh;
+
+    border-bottom: 2px solid;
+    border-color: white;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    
+    background-color: #181B1E;
+
+    transition: background-color 0.5s, border-color 0.5s;
+
+}
+
+.main_content_container{
+
+    display: flex;
+
+}
+
+.main_content_name_occupation_container{
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
+    min-width: 30vw;
+    min-height: 14vw;
+    
+    padding-left: 3vw;
+    padding-top: 4vw;
+    
+}
+
+.main_content_description_container{
+
+    display: flex;
+
+    padding-left: 1vw;
+    padding-top: 3.5vw;
+
+}
+
+.main_links_container{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.link_container{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 8vw;
+    height: 15vh;
+
+    margin-top: 3vh;
+    padding-top: 10vh;
+
+}
+
+/* Content CSS - Hover */
+
+.toggle_dark_mode:hover, .link_container:hover{
+
+    cursor: pointer;
+
+}
+
+.toggle_dark_mode:hover .toggle_icon{
+
+    transform: scale(2, 2);
+    text-shadow: 0px 0px 2px rgb(255, 255, 255);
+
+}
+
+.link_container:hover .link_icon{
+
+    transform: scale(3.4, 3.4); 
+    text-shadow: 0px 0px 2px rgb(255, 255, 255);
+    
+}
+
+.link_container:hover .link_title{
+
+    color: rgb(255, 164, 128);
+
+}
+
+/* Icons */
+.toggle_icon{
+
+    color:#F5F5F5;
+
+    transform: scale(1.7, 1.7);
+
+    transition: transform 0.5s, text-shadow 0.5s;
+
+}
+
+.link_icon{
+
+    color:#F5F5F5;
+
+    transform: scale(3, 3); 
+    padding-bottom: 1vh;
+
+    transition: transform 0.5s, text-shadow 0.5s;
+}
+
+/* Text and Fonts */
+b{
+
+    font-weight: 700;
+
+}
+
+.title, .link_title{
+
+    font-family: 'Exo 2', Arial;
+    user-select: none;
+    
+}
+
+.content{
+
+    font-family: 'Inter', Arial;
+    user-select: none;
+
+}
+
+.head{
+
+    font-size: 30px;
+    font-weight: 700;
+
+    color: #F5F5F5;
+
+    transition: color 0.5s;
+
+    margin: 0px;
+
+}
+
+.name{
+    
+    font-size: 50px;
+    font-weight: 800;
+
+    margin: 0px;
+
+    color: #F5F5F5;
+
+    transition: color 0.5s;
+
+
+}
+
+.blinker{
+
+    animation: blink 2s steps(1) infinite;
+    transition: color 0.5s
+
+}
+
+.occupation{
+
+    font-size: 35px;
+    font-weight: 300;
+    color: salmon;
+
+    margin-top: 10px;
+
+    transition: color 0.5s;
+
+}
+
+.description_home{
+
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.3;
+
+    width: 90%;
+
+    color: #F5F5F5;
+
+    transition: color 0.5s;
+
+}
+
+.link_title{
+
+    font-size: 25px;
+    font-weight: 400;
+    color: salmon;
+
+    transition: color 0.5s;
+
+}
+
+.copyright{
+
+    font-size: 15px;
+    font-weight: 300;
+    color: #F5F5F5;
+
+    transition: color 0.5s;
+
+}
+/* Light Mode*/
+.body_light_mode{
+
+    background-color: #F5F5F5;
+
+}
+
+.header_light_mode, .icon_light_mode, .font_toggle_white_light_mode{
+
+    color: #181B1E;
+
+}
+
+.container_light_mode{
+
+    background-color: #fff8f8;
+
+}
+
+.border_light_mode{
+
+    border-color: black;
+
+}
+
+
+.font_toggle_lightblue_light_mode{
+
+    color: #77B1D4;
+
+}
+
+.toggle_dark_mode:hover .icon_light_mode, .link_container:hover .icon_light_mode, .icon_links_container i:hover.icon_light_mode{
+
+    text-shadow: 0px 0px 2px #77B1D4;
+
+}
+
+.link_container:hover .font_toggle_lightblue_light_mode{
+
+    color: #90c8eb;
+
+}
+
+.button_link.font_toggle_white_light_mode{
+
+    background-color: #77B1D4;
+
+}
+
+.button_link:hover.font_toggle_white_light_mode{
+
+    box-shadow: 0px 0px 5px #77B1D4;
+
+}
+
+
+/* Animation Keyframes */
+@keyframes blink{
+
+    0% {opacity: 1;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+
+}
+
+
+/* Header CSS for Content Pages*/
+.return_container{
+
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+
+    right: 18vw;
+
+    width: 4vw;
+    height: 7vh;
+
+
+}
+
+.return_icon{
+
+    transform: scale(1.4, 1.4);
+
+    transition: transform 0.5s, text-shadow 0.5s;
+
+}
+
+.return_container:hover{
+
+    cursor: pointer;
+
+}
+
+.return_container:hover .return_icon{
+
+    transform: scale(1.7, 1.7);
+    text-shadow: 0px 0px 5px rgb(255, 255, 255);
+
+}
+
+/* CSS Scroll Bar */
+.scrollable_container{
+
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 100%;
+    margin-right: 0.3vw; /* account for scrollbar width */
+
+}
+
+.scrollable_container::-webkit-scrollbar {
+
+    width: 12px;
+
+}
+
+.scrollable_container::-webkit-scrollbar-track {
+
+    background: grey;
+
+    
+}
+
+.scrollable_container::-webkit-scrollbar-thumb {
+
+    background: salmon; 
+
+}
+
+.scrollable_container.font_toggle_lightblue_light_mode::-webkit-scrollbar-thumb {
+
+    background: #90c8eb;
+
+}
+
+/* CSS Tooltip */
+.tooltip{
+
+    position: relative;
+
+}
+
+.tooltip_text {
+
+    position: absolute;
+    
+    opacity: 0;
+    
+
+    padding: 5px;
+    padding-top: 10px;
+
+    width: 50%;
+    height: 125%;
+
+    font-size: 15px;
+    font-weight: 300;
+    text-align: center;
+
+    color: #F5F5F5;
+
+    background-color: rgba(0, 0, 0, 0.789);
+
+    border-radius: 5px;
+  
+    z-index: 1;
+
+    top: -150%;
+    left: 25%;
+
+    transition: opacity 0.25s;
+}
+
+.tooltip_text::after {
+
+    content: "";
+    position: absolute;
+
+    margin-left: -5px;
+    border-width: 5px;
+
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+
+    top: 100%;
+    left: 50%;
+
+}
+
+.tooltip:hover .tooltip_text {
+  
+    opacity: 1;
+
+}
+
+/* Footer CSS */
+.footer_container{
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    margin-top: -9vh;
+
+}
+
+.icon_links_container i{
+
+    margin-left: 1.5vw;
+    margin-right: 1.5vw;
+
+    transition: transform 0.5s, text-shadow 0.5s;
+
+}
+
+.icon_links_container i:hover{
+
+    cursor: pointer;
+    transform: scale(3.5, 3.5);
+    text-shadow: 0px 0px 2px #F5F5F5;
+
+}
+
+/* No Transition CSS */
+.no_transition, .no_transition *{
+
+    transition: none !important; 
+    
+}
+
+
+
+/* Mobile Format */
+@media (max-width: 800px) {
+
+    .main_body {
+
+        width: 85vw;
+
+        min-height: 70vh;
+        height: 70vh;
+
+        margin-top: 0px;
+
+    }
+
+    .main_content_container {
+
+        flex-direction: column; 
+
+    }
+
+    .main_content_name_occupation_container {
+
+        min-width: 100%;
+        padding-top: 2vh;
+        margin-left: -5vw;
+
+        text-align: center;
+
+    }
+
+    .main_content_description_container {
+
+        padding-left: 5vw;
+        padding-top: 2vh;
+
+        text-align: center;
+    }
+
+    .name {
+        font-size: 40px;
+    }
+
+    .occupation {
+
+        font-size: 30px;
+
+    }
+
+    .description_home {
+        
+        font-size: 20px;
+    }
+
+    .link_container {
+
+        width: 20vw;
+        padding-top: 5vh;
+
+    }
+
+    .link_title {
+
+        font-size: 20px;
+
+    }
+
+    .icon_links_container .link_icon{
+
+        padding-left: 5vw;
+        padding-right: 5vw;
+
+    }
+
+    .copyright{
+
+        margin-left: 5vw;
+
+    }
+
+    .return_icon{
+
+        padding-left: 4vw;
+
+    }
+
+    .tooltip_text{
+
+        width: 70%;
+        height: 5vh;
+        margin-top: 1vh;
+
+    }
+
+}
