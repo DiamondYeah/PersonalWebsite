@@ -185,7 +185,7 @@ const projectsArray = [
     {
         name: "Hidden Gems APP",
         description: `Hidden Gems is a database application made via <b>Java and SQL</b> via a <b>MySQL Connector Java</b> for a group project in databases and management. 
-                The database application is travel-themed with <b> basic login and CRUD elements for user, travel, booking, feedback and Booking</b>. 
+                The database application is travel-themed with <b> basic login and CRUD elements for user, travel, feedback, and booking</b>. 
                 The feedback <b>CRUD and login and button layout were all developed and designed by me</b>.`,
         link: "https://github.com/DiamondYeah/CCINFOM-Group-1-DBAPP",
         isInGithub: true,
@@ -204,6 +204,17 @@ const projectsArray = [
         isInGithub: true,
         img: "../resources/convexhull_pic.png",
         technologies: ["C"]
+
+    },
+    {
+
+        name: "Roll to Haul!",
+        description: `A simple <b> Unity game made with C# </b> where the player rolls a ball and collects items and avoid the enemy to win. 
+                Built by following a Unity Help tutorial with <b> added features such as restart system, main menu, and smooth camera following</b>.`,
+        link: "https://diamondyeah.itch.io/roll-to-haul/download/1dcZHyPG7GBC9cDdn2h_M7m6SXZwGcYW4trGn5hL",
+        isInGithub: false,
+        img: "../resources/rolltohaul_pic.png",
+        technologies: ["Unity", "C#"]
 
     }
 
