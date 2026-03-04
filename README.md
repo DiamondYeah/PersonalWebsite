@@ -23,7 +23,7 @@ Personal static website showing information about me, including skills, projects
 1. Open link: https://diamondyeah.github.io/PersonalWebsite/
 
 <b> II. Locally </b>
-1. Clone or download repository
+1. Clone or download repository (If downloading the ZIP file, rename the folder to PersonalWebsite to fix pathing issues)
 2. Open index.html
 
 ---
