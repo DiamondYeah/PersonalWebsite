@@ -19,7 +19,7 @@
     display: flex;
     flex-direction: column;
 
-    padding-left: 1vw;
+    padding-left: 3vw;
     padding-top: 3.5vw;
 
 }
@@ -41,7 +41,7 @@
 
 .contact_me{
 
-    font-size: 60px;
+    font-size: 70px;
     font-weight: 800;
 
     margin: 0px;
@@ -54,7 +54,7 @@
 
 .contact_desc{
 
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 300;
     color: salmon;
 
@@ -209,7 +209,6 @@
     .email_me_container {
 
         margin-top: -4vh;
-
 
     }
 

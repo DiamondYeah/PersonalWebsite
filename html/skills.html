@@ -20,17 +20,27 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
-        <!-- Link JS File for homepage interaction -->
-        <script src = "../js/main.js"></script>
+        <!-- Link JS equivalent of TS File for darkmode interaction -->
+        <script type = "module" src = "../js/darkmode.js"></script>
 
+        <!-- Link JS equivalent of TS File for sound toggle interaction -->
+        <script type = "module" src = "../js/soundtoggle.js"></script>
+        
     </head>
+
 
     <body>
 
         <div class = "toggle_dark_mode">
 
-            <i class="fa-regular fa-moon fa-xl toggle_icon"></i>
+            <i class="fa-solid fa-moon fa-xl toggle_icon"></i>
 
+        </div>
+
+        <div class = "toggle_sound_mode">
+
+            <i class="fa-solid fa-volume fa-xl toggle_icon"></i>
+            
         </div>
 
 
@@ -54,16 +64,18 @@
 
                     <div class = "skills_container">
 
-                        <p class = "title about_header toggle_lightblue"> Programming Languages</p>
+                        <p class = "title about_header toggle_lightblue"> Programming Languages & Technologies</p>
                         <div class = "collection_list">
  
+                            <p class = "content collection_element toggle_lightblue"> Python </p>
                             <p class = "content collection_element toggle_lightblue"> Java </p>
                             <p class = "content collection_element toggle_lightblue"> C </p>
                             <p class = "content collection_element toggle_lightblue"> C# </p>
-                            <p class = "content collection_element toggle_lightblue"> HTML </p>
-                            <p class = "content collection_element toggle_lightblue"> CSS </p>
-                            <p class = "content collection_element toggle_lightblue"> Javascript </p>
+                            <p class = "content collection_element toggle_lightblue"> HTML & CSS </p>
+                            <p class = "content collection_element toggle_lightblue"> Javascript & Typescript </p>
                             <p class = "content collection_element toggle_lightblue"> SQL </p>
+                            <p class = "content collection_element toggle_lightblue"> MongoDB </p>
+                            <p class = "content collection_element toggle_lightblue"> Assembly </p>
 
                         </div>
 
@@ -74,6 +86,7 @@
                         <div class = "collection_list">
 
                             <p class = "content collection_element toggle_lightblue"> Frontend Development </p>
+                            <p class = "content collection_element toggle_lightblue"> Basic Backend Development </p>
                             <p class = "content collection_element toggle_lightblue"> Website Designing </p>
                             <p class = "content collection_element toggle_lightblue"> Basic Game Development </p>
                             <p class = "content collection_element toggle_lightblue"> Basic Video Editing </p>
@@ -89,9 +102,12 @@
                         <div class = "collection_list">
 
                             <p class = "content collection_element toggle_lightblue"> Visual Studio Code </p>
+                            <p class = "content collection_element toggle_lightblue"> Visual Studio 2026 </p>
                             <p class = "content collection_element toggle_lightblue"> Unity </p>
                             <p class = "content collection_element toggle_lightblue"> Git </p>
                             <p class = "content collection_element toggle_lightblue"> Jupyter Notebook </p>
+                            <p class = "content collection_element toggle_lightblue"> SASM </p>
+                            <p class = "content collection_element toggle_lightblue"> MongoDB Compass </p>
                             <p class = "content collection_element toggle_lightblue"> Davinci Resolve </p>
                             <p class = "content collection_element toggle_lightblue"> Aseprite </p>
 
@@ -115,12 +131,21 @@
 
                 <div class = "icon_links_container">
 
-                    <i class = "fa-brands fa-facebook fa-sm link_icon" onclick = "window.open(`https://www.facebook.com/martinjames.gamilla/`, `_blank`)"></i>
-                    <i class = "fa-brands fa-github fa-sm link_icon" onclick = "window.open(`https://github.com/DiamondYeah`, `_blank`)"></i>
+                    <i class = "fa-brands fa-facebook fa-sm link_icon contact_link" onclick = "window.open(`https://www.facebook.com/martinjames.gamilla/`, `_blank`)"></i>
+                    <i class = "fa-brands fa-github fa-sm link_icon contact_link" onclick = "window.open(`https://github.com/DiamondYeah`, `_blank`)"></i>
                     
                 </div>
 
-                <p class = "content copyright toggle_white"> © 2026 Martin James Gamilla </p>
+                <div class = "footer_content_container">
+
+                    <p class = "content copyright toggle_white"> © 2026 Martin James Gamilla </p>
+                    <p class = "content attribution toggle_white"> All sound effects are found in 
+                        <a class = "attribution_link contact_link toggle_lightblue" href = "https://www.zapsplat.com/" target = "_blank" >Zapsplat.com</a>
+                    </p>
+
+                </div>
+
+
 
             </div>
 

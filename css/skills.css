@@ -56,7 +56,6 @@
     border-color: white;
     border-radius: 10px;
 
-    box-shadow: 0px 0px 0px white;
     transform: scale(1, 1);
 
     transition: box-shadow 0.5s, transform 0.5s, border-color 0.5s;
