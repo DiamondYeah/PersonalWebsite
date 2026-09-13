@@ -1,3 +1,86 @@
+/* Project List CCS */
+.projectslist_container{
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+
+    margin-top: 4vh;
+    gap: 2vw;
+
+}
+
+.project_pic{
+
+    height: 100%;
+    width: 100%;
+
+}
+
+
+.projectlist_pic{
+
+    height: 30vh;
+    width: 100%;
+    border: 4px solid salmon;
+    color: salmon;
+
+    transition: color 0.5s, transform 0.5s, box-shadow 0.5s;
+
+}
+
+.projectheader_container{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 43.5%;
+
+    gap: 2vw;
+
+}
+
+.projectheader_title{
+
+    font-family: 'Exo 2', Arial;
+    user-select: none;
+    
+    font-size: 28px;
+    font-weight: 800;
+
+    color: salmon;
+
+    transition: color 0.5s;
+
+    margin: 0;
+    margin-top: -2vh;
+    margin-bottom: 1vh;
+
+}
+
+
+.return_projectlist_container{
+
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+
+    right: 18vw;
+
+    width: 4vw;
+    height: 7vh;
+
+
+}
+
+
 /* Main Skills CSS */
 
 .main_body{
@@ -18,29 +101,31 @@
 .projects_container{
 
     display: flex;
-
+    padding-left: 3vw;
+    padding-top: 2vh;
 
 }
+
 .project_pic_container{
 
     display: flex;
 
-    height: 33vh;
+    height: 37vh;
     width: 32vw;
 
     margin-top: -2vh;
 
-    border: 1px solid;
-    border-color: salmon;
+    border: 4px solid salmon;
 
     transition: border-color 0.5s;
 
 }
 
-.project_pic{
 
-    height: 100%;
-    width: 100%;
+
+.title_image_container{
+
+    margin-top: -1vh;
 
 }
 
@@ -50,7 +135,7 @@
     display: flex;
     flex-direction: column;
 
-    margin-top: 5vh;
+    margin-top: 6vh;
 
     padding-top: 2vh;
     padding-left: 3vw;
@@ -60,37 +145,9 @@
 
 .button_link{
 
-    margin-left: 7vw;
-    margin-top: -2vh;
-
-    height: 6vh;
-    width: 12vw;
-
-    font-family: 'Exo 2', Arial;
-    font-size: 20px;
-    font-weight: 500;
-    user-select: none;
-    color: #F5F5F5;
-
-    background-color: salmon;
-    border-radius: 5px;
-
-    transition: background-color 0.5s, color 0.5s;
-    
-}
-
-.github_link{
-
     position: absolute;
-    top: 57vh;
-    left: 54.5vw;
-
-}
-
-.button_link{
-
-    margin-left: 7vw;
-    margin-top: -2vh;
+    left: 60vw;
+    top: 63vh;
 
     height: 6vh;
     width: 12vw;
@@ -111,36 +168,17 @@
     
 }
 
-
-.button_link:hover{
-
-    cursor: pointer;
-
-    box-shadow: 0px 0px 5px salmon;
-    transform: scale(1.05, 1.05);
-}
-
-
-.projects_container{
-    padding-left: 3vw;
-
-}
-
-
-/* About Me Fonts CSS */
 .project_title{
 
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 800;
     color: salmon;
 
 }
 
-
 .description{
 
-
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 300;
     line-height: 1.3;
 
@@ -154,6 +192,43 @@
 
 
 }
+
+
+/* Project CSS - Hover */
+
+.projectlist_pic:hover{
+
+    cursor: pointer;
+
+    box-shadow: 0px 0px 10px currentColor;
+    transform: scale(1.05, 1.05);
+
+    transition: color 0.5s, transform 0.5s, box-shadow 0.5s;
+
+}
+
+.return_projectlist_container:hover{
+
+    cursor: pointer;
+
+}
+
+.return_projectlist_container:hover .return_icon{
+
+    transform: scale(1.7, 1.7);
+    text-shadow: 0px 0px 5px rgb(255, 255, 255);
+
+}
+
+.button_link:hover{
+
+    cursor: pointer;
+
+    box-shadow: 0px 0px 5px salmon;
+    transform: scale(1.05, 1.05);
+
+}
+
 
 /* Light Mode */
 
@@ -170,7 +245,7 @@
 
 }
 
-.project_pic_container.font_toggle_lightblue_light_mode{
+.project_pic_container.font_toggle_lightblue_light_mode, .projectlist_pic.font_toggle_lightblue_light_mode{
 
     border-color: #77B1D4;
 
@@ -302,7 +377,7 @@
     padding-left: 0.5vw;
     padding-right: 0.5vw;
 
-    height: 4vh;
+    height: 3.5vh;
 
     font-size: 15px;
     color: #F5F5F5;
@@ -365,14 +440,14 @@
         margin-top: 0px;
         margin-left: 9vw;
 
-        height: 25vh;
+        height: 35vh;
         width: 60vw;
 
     }
 
     .description_link_container {
 
-        margin-top: -2vh;
+        margin-top: -2.5vh;
 
         padding-left: 2vw;
 
@@ -392,12 +467,6 @@
         width: 30vw;
         font-size: 20px;
 
-    }
-
-    .github_link {
-
-        top: 79vh;
-        left: 48vw;
     }
 
 }
