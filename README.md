@@ -1,8 +1,7 @@
 # Personal Website
 
-Personal static website showing information about me, including skills, projects, and contacts. Built via HTML, CSS, and JavaScript.
-
-
+<b> Hello! </b>
+This is my Personal website featuring information about me, including skills, projects, and contact details. The website was built using HTML, CSS, and TypeScript. 
 
 ---
 
@@ -12,8 +11,44 @@ Personal static website showing information about me, including skills, projects
 - Skills section
 - Projects section
 - Contacts section
+- Games section (WIP) <b>NEW!</b>
 - Light mode and dark mode toggle
-- Utilizes Font Awesome library for the icons
+- Sound toggle with Sound Effects from Zapsplat.com <b>NEW!</b>
+- Utilizes the Font Awesome library for the icons
+
+---
+
+## Updates
+
+
+### Version 1.1
+<details>
+  
+  <summary><b>Features</b></summary>
+
+  <ul>
+    <li>Reformatted Code from JavaScript to TypeScript to help with bug-catching and used its compiler to compile it into JavaScript for use</li>
+    <li>Added Game Page (Work in Progress - To be completed in Version 1.3)</li>
+    <li>Added Sound Mode option on upper-left and sound effects to certain interactions (e.g., clicking links and opening projects)</li>
+    <li>Revamped the Projects Page to be Scrollable and not use pagination for better scalability</li>
+    <li>Adjusted the title page for each page to make it more aligned with the content</li>
+    <li>Added an error page whenever an error occurs, with a custom animation (e.g., missing elements)</li>
+    <li>Adding missing transitions to icons on hover</li>
+    <li>Updated and added new information on the website</li>
+    <li>Adjusted format and styles on pages such as projects to make it more aligned</li>
+    <li>Reformatted Code from JavaScript to TypeScript to help with bug-catching and used its compiler to compile it into JavaScript for use</li>
+    <li>Added Game Page (Work in Progress - To be completed in Version 1.3)</li>
+    <li>Added Sound Mode option on upper-left and sound effects to certain interactions (e.g., clicking links and opening projects)</li>
+    <li>Revamped the Projects Page to be Scrollable and not use pagination for better scalability</li>
+    <li>Adjusted the title page for each page to make it more aligned to content</li>
+    <li>Added an error page whenever an error occurs with a custom animation (e.g., missing elements)</li>
+    <li>Adding missing transitions to icons on hover</li>
+    <li>Updated and added new information in the website</li>
+    <li>Adjusted format and styles on pages such as projects to make it more aligned</li>
+  </ul>
+
+</details>
+
 
 ---
 
@@ -23,7 +58,7 @@ Personal static website showing information about me, including skills, projects
 1. Open link: https://diamondyeah.github.io/PersonalWebsite/
 
 <b> II. Locally </b>
-1. Clone or download repository (If downloading the ZIP file, rename the folder to PersonalWebsite to fix pathing issues)
+1. Clone or download the repository (If downloading the ZIP file, rename the folder to PersonalWebsite to fix pathing issues)
 2. Open index.html
 
 ---
@@ -45,11 +80,17 @@ Personal static website showing information about me, including skills, projects
 |   └── skills.css
 | 
 ├── js/
-|   ├── main.js
-|   └── pagination.js
-| 
+|
+├── ts/
+|   ├── darkmode.ts
+|   ├── email.ts
+|   ├── projectlist.ts
+|   ├── projectswithc.ts
+|   └── soundtoggle.ts
 ├── fontawesome
 └── resources/
+    ├── audio/
+    └── pictures/
 ```
 
 --- 
