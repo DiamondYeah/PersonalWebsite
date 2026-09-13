@@ -1,14 +1,16 @@
 // Add an event listener when loading up the webpage
 document.addEventListener("DOMContentLoaded", function () {
     const soundModeToggle = document.getElementsByClassName("toggle_sound_mode")[0] ?? null; // Sound Mode Toggle
+    // Computes the relative path of the audio depending on the html file location. Required for index page to have audio
+    const relativePath = window.location.pathname.endsWith("/html/") ? "./resources/audio/" : "../resources/audio/";
     // List of sound effects
-    const soundToggleOn = new Audio("../resources/audio/sound_toggleon.mp3") ?? null;
-    const soundToggleOff = new Audio("../resources/audio/sound_toggleoff.mp3") ?? null;
-    const soundLightMode = new Audio("../resources/audio/sound_lightmode.mp3") ?? null;
-    const soundDarkMode = new Audio("../resources/audio/sound_darkmode.mp3") ?? null;
-    const soundButtonClick = new Audio("../resources/audio/sound_buttonclick.mp3") ?? null;
-    const soundButtonReturn = new Audio("../resources/audio/sound_buttonreturn.mp3") ?? null;
-    const soundLinkClick = new Audio("../resources/audio/sound_linkclick.mp3") ?? null;
+    const soundToggleOn = new Audio(relativePath + "sound_toggleon.mp3") ?? null;
+    const soundToggleOff = new Audio(relativePath + "sound_toggleoff.mp3") ?? null;
+    const soundLightMode = new Audio(relativePath + "sound_lightmode.mp3") ?? null;
+    const soundDarkMode = new Audio(relativePath + "sound_darkmode.mp3") ?? null;
+    const soundButtonClick = new Audio(relativePath + "sound_buttonclick.mp3") ?? null;
+    const soundButtonReturn = new Audio(relativePath + "sound_buttonreturn.mp3") ?? null;
+    const soundLinkClick = new Audio(relativePath + "sound_linkclick.mp3") ?? null;
     // If soundModeToggle is null, go to error page
     if (!soundModeToggle) {
         window.location.href = `/html/error.html`;
