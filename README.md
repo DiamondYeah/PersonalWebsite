@@ -26,7 +26,7 @@ This is my Personal website featuring information about me, including skills, pr
   
   <summary><b>Features</b></summary>
 
-  <ol>
+  <ul>
     <li>Reformatted Code from JavaScript to TypeScript to help with bug-catching and used its compiler to compile it into JavaScript for use</li>
     <li>Added Game Page (Work in Progress - To be completed in Version 1.3)</li>
     <li>Added Sound Mode option on upper-left and sound effects to certain interactions (e.g., clicking links and opening projects)</li>
@@ -45,7 +45,7 @@ This is my Personal website featuring information about me, including skills, pr
     <li>Adding missing transitions to icons on hover</li>
     <li>Updated and added new information in the website</li>
     <li>Adjusted format and styles on pages such as projects to make it more aligned</li>
-  </ol>
+  </ul>
 
 </details>
 
