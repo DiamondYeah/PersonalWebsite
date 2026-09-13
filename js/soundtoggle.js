@@ -1,8 +1,8 @@
 // Add an event listener when loading up the webpage
 document.addEventListener("DOMContentLoaded", function () {
     const soundModeToggle = document.getElementsByClassName("toggle_sound_mode")[0] ?? null; // Sound Mode Toggle
-    // Computes the relative path of the audio depending on the html file location. Required for index page to have audio
-    const relativePath = window.location.pathname.includes("/html/") ? "../resources/audio/" : "./resources/audio/";
+    // Computes the relative path of the audio with URL and meta.url. Required for index page to have audio
+    const relativePath = new URL("../resources/audio/", import.meta.url).href;
     // List of sound effects
     const soundToggleOn = new Audio(relativePath + "sound_toggleon.mp3") ?? null;
     const soundToggleOff = new Audio(relativePath + "sound_toggleoff.mp3") ?? null;
